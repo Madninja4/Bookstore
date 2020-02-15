@@ -1,0 +1,4 @@
+beans\BookList.class
+beans\Book.class
+beans\BookManagerImpl.class
+beans\BookManager.class

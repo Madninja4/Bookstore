@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="BookstoreJSF:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>BookstoreJSF</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="BookstoreJSF-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="BookstoreJSF:war exploded" />
+    </root>
+  </artifact>
+</component>
