@@ -15,7 +15,8 @@ public class CommandStatistics extends Command{
 	@Override
 	public Action executeAction(HttpServletRequest req) {
 		int bookCount = dao.bookCount();
-		double averagePrice = dao.averagePrice();
+		double totalPrice = dao.totalPrice();
+		double averagePrice = totalPrice / bookCount;
 		
 		req.setAttribute("bookCount", bookCount);
 		req.setAttribute("averagePrice", averagePrice);
