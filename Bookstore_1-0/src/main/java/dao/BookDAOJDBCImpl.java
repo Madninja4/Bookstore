@@ -222,4 +222,15 @@ public class BookDAOJDBCImpl implements BookDAO {
 			}
 		});
 	}
+	
+	public int bookCount() {
+		
+		return 0;
+	}
+	
+	public double averagePrice( ) {
+		
+		return 0.0;
+	}
+	
 }
