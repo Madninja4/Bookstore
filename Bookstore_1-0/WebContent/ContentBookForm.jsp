@@ -34,7 +34,7 @@
 		</div>
 		<div>
 			<label for="author">Author</label>
-			<input name="author" id="title" value="${book.author}"/>
+			<input name="author" id="author" value="${book.author}"/>
 		</div>
 		<div>
 			<label for="price">Price</label>
