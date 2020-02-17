@@ -1,5 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<a href="${pageContext.request.contextPath}/listbooks">Back</a>
+<a href="${pageContext.request.contextPath}/">Back</a>
 
 <table class="listing">
 	<tr>
