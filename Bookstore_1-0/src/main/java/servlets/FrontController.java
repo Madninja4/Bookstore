@@ -13,6 +13,7 @@ import commands.*;
 
 import javax.servlet.ServletContext;
 import dao.*;
+import dao.jsondao.JSON;
 
 /**
  * Servlet implementation class FrontController
@@ -22,7 +23,7 @@ public class FrontController extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
     
-	@Inject @JDBC
+	@Inject @JSON
 	BookDAO dao;
 	
 	/**
