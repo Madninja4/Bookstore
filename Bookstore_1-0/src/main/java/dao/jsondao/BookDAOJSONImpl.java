@@ -15,7 +15,7 @@ import javax.sql.DataSource;
 import beans.Book;
 
 @ApplicationScoped @JSON
-public class BookDAOJsonImpl implements BookDAO{
+public class BookDAOJSONImpl implements BookDAO{
 
 	public Book find(int id) {
 		
