@@ -3,21 +3,25 @@ package dao.jsondao;
 import javax.enterprise.context.ApplicationScoped;
 import dao.BookDAO;
 import java.math.BigDecimal;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Resource;
-import javax.sql.DataSource;
 import beans.Book;
+
+import java.io.FileReader; 
+import java.util.Iterator; 
+import java.util.Map; 
+  
+import org.json.simple.JSONArray; 
+import org.json.simple.JSONObject; 
+import org.json.simple.parser.*; 
 
 @ApplicationScoped @JSON
 public class BookDAOJSONImpl implements BookDAO{
 
 	public Book find(int id) {
+		
+		Object obj = new JSONParser().parse(new FileReader("books.json"));
 		
 		return new Book();
 	}
